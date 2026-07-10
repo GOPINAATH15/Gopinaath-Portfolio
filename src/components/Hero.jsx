@@ -77,7 +77,7 @@ export default function Hero() {
               download
               className="rounded-md border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-accent/60 hover:text-accent-light transition-colors"
             >
-              Download Resume
+              Download Resumee
             </a>
           </div>
 
