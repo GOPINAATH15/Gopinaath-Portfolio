@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { profile } from "../data/resume";
+import resumePdf from "../data/Gopi_Resume.pdf";
 
 const links = [
   { href: "#about", label: "About" },
@@ -49,7 +50,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/Gopinaath_A_Resume.pdf"
+          href={resumePdf}
           download
           className="hidden md:inline-flex items-center gap-2 rounded-md border border-accent/40 px-3.5 py-1.5 text-xs font-mono uppercase tracking-widest text-accent-light hover:bg-accent/10 transition-colors"
         >
@@ -87,7 +88,7 @@ export default function Navbar() {
             ))}
             <li className="border-t border-line/60">
               <a
-                href="/Gopinaath_A_Resume.pdf"
+                href={resumePdf}
                 download
                 className="flex items-center gap-2 px-6 py-3 text-accent-light"
               >

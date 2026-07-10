@@ -106,19 +106,26 @@ export const projects = [
 
 export const education = [
   {
+    id: "mca",
+    school: "KGiSL IIM, Coimbatore",
+    degree: "MCA",
+    period: "2025 – 2027(Pursuing)",
+    detail: "CGPA: 8.0 / 10",
+  },
+  {
     id: "bsc",
     school: "Sri Krishna Arts and Science College, Coimbatore",
     degree: "B.Sc Computer Science with Cognitive Systems",
     period: "2021 – 2024",
     detail: "CGPA: 7.8 / 10",
   },
-  {
-    id: "hsc",
-    school: "Saratha Matriculation Higher Secondary School",
-    degree: "HSC, State Board",
-    period: "2020 – 2021",
-    detail: "79%",
-  },
+  // {
+  //   id: "hsc",
+  //   school: "Saratha Matriculation Higher Secondary School",
+  //   degree: "HSC, State Board",
+  //   period: "2020 – 2021",
+  //   detail: "79%",
+  // },
 ];
 
 export const languages = ["English", "Tamil"];

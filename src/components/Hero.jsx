@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/resume";
+import resumePdf from "../data/Gopi_Resume.pdf";
 
 function useTypewriter(strings, typeSpeed = 55, pause = 1400) {
   const [text, setText] = useState("");
@@ -72,7 +73,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href="/Gopinaath_A_Resume.pdf"
+              href={resumePdf}
               download
               className="rounded-md border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-accent/60 hover:text-accent-light transition-colors"
             >
