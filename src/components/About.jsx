@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Code2, Database, Layers, GraduationCap } from "lucide-react";
 import { profile } from "../data/resume";
 
+
 const facts = [
   {
     icon: Code2,
@@ -79,7 +80,7 @@ export default function About() {
             {facts.map(({ icon: Icon, label, value }) => (
               <div
                 key={label}
-                className="glass-panel rounded-lg p-4 hover:border-accent/40 border border-transparent transition-colors"
+                className="glass-panel rounded-lg p-4 hover:border-accent-light/40 border border-transparent transition-colors"
               >
                 <Icon size={18} className="text-accent-light mb-3" />
                 <p className="font-mono text-[11px] uppercase tracking-widest text-ink-faint">

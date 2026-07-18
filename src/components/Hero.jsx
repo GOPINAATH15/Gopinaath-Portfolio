@@ -39,7 +39,7 @@ export default function Hero() {
       className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden bg-grid-pattern bg-[size:44px_44px]"
     >
       <div
-        className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[640px] rounded-full bg-accent/20 blur-[140px]"
+        className="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[640px] h-[640px] rounded-full bg-accent-light/15 blur-[140px]"
         aria-hidden
       />
 
@@ -68,7 +68,7 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a
               href="#projects"
-              className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white shadow-glow hover:bg-accent-dim transition-colors"
+              className="rounded-md bg-accent px-6 py-3 text-sm font-semibold text-black shadow-glow hover:bg-accent-light transition-colors"
             >
               View Projects
             </a>
@@ -77,7 +77,7 @@ export default function Hero() {
               download
               className="rounded-md border border-line px-6 py-3 text-sm font-semibold text-ink hover:border-accent/60 hover:text-accent-light transition-colors"
             >
-              Download Resumee
+              Download Resume
             </a>
           </div>
 

@@ -25,9 +25,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-base/85 backdrop-blur-md border-b border-line" : "bg-transparent"
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled ? "bg-base/85 backdrop-blur-md border-b border-line" : "bg-transparent"
+        }`}
     >
       <nav className="section-shell flex items-center justify-between h-16">
         <a href="#top" className="font-mono text-sm text-ink group">

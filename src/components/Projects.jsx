@@ -33,7 +33,7 @@ export default function Projects() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
               whileHover={{ y: -6 }}
-              className="glass-panel rounded-xl p-6 flex flex-col shadow-glass hover:shadow-glow hover:border-accent/40 border border-transparent transition-shadow"
+              className="glass-panel rounded-xl p-6 flex flex-col shadow-glass hover:shadow-glow hover:border-accent-light/40 border border-transparent transition-shadow"
             >
               <p className="font-mono text-[11px] uppercase tracking-widest text-signal">
                 {project.subtitle}

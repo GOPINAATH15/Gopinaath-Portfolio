@@ -7,26 +7,26 @@
 }
 
 body {
-  background-color: #0f172a;
+  background-color: #000000;
 }
 
 ::selection {
-  background: #2563eb;
-  color: #f8fafc;
+  background: #f8fafc;
+  color: #000000;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a1122;
+  background: #020202;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #1f1f24;
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #38bdf8;
 }
 
 /* Visible keyboard focus, kept consistent site-wide */
@@ -34,20 +34,37 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #60a5fa;
+  outline: 2px solid #38bdf8;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 .section-shell {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-shell {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 .glass-panel {
-  background: rgba(20, 30, 51, 0.55);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(14, 14, 16, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -57,7 +74,7 @@ textarea:focus-visible {
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #60a5fa;
+  color: #38bdf8;
 }
 
 @media (prefers-reduced-motion: reduce) {
