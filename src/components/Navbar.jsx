@@ -78,7 +78,17 @@ export default function Navbar() {
               <li key={l.href} className="border-t border-line/60">
                 <a
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setOpen(false);
+                    const target = document.querySelector(l.href);
+                    if (target) {
+                      setTimeout(() => {
+                        target.scrollIntoView({ behavior: "smooth" });
+                      }, 100);
+                    }
+                    window.history.pushState(null, null, l.href);
+                  }}
                   className="block px-6 py-3 text-ink-muted hover:text-ink"
                 >
                   {l.label}
@@ -89,6 +99,7 @@ export default function Navbar() {
               <a
                 href={resumePdf}
                 download
+                onClick={() => setOpen(false)}
                 className="flex items-center gap-2 px-6 py-3 text-accent-light"
               >
                 <Download size={14} /> Resume
